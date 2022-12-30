@@ -1,0 +1,262 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+  }
+  @keyframes example {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+  
+    30% {
+      color: hsl(230, 80%, 90%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+  
+    40% {
+      color: hsl(230, 100%, 95%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+  
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+  
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+  }
+  .maincontainer {
+    width: 100%;
+    height: 900vh;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 20px;
+    color: white;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    padding: 20px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    position: sticky;
+    top: 0px;
+  }
+  .navmenus ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .arrow {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 11, 11);
+  }
+  .navmenus ul li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  .navmenus ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .homesection {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(13, 11, 11);
+  }
+  
+  .headingsection h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 110px;
+    line-height: 220px;
+    margin-left: 90px;
+  
+    margin-top: 50px;
+    color: white;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  .headingsection {
+    flex: 0.6;
+  }
+  .imgsection {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .imag img {
+    height: 400px;
+    width: 600px;
+    object-fit: contain;
+    margin-bottom: 35px;
+  }
+  .aboutussection {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+  }
+  .aboutpic {
+    flex: 0.3;
+  }
+  .aboutheading h1 {
+    font-size: 80px;
+  }
+  .aboutdetails {
+    flex: 0.7;
+    margin-left:50px ;
+    margin-top: 60px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+  
+  .aboutpic img {
+    height: 650px;
+    width: 600px;
+    object-fit: cover;
+    margin-left: 100px;
+    margin-top: 70px;
+  }
+  .aboutdesc {
+    margin-top: 25px;
+    width: 80%;
+    font-size: 20px;
+    line-height: 29px;
+  }
+  
+  .servicessection {
+    height: 60vh;
+    padding: 90px;
+  }
+  
+  .servicesheading h1 {
+    font-size: 80px;
+    margin-top:140px ;
+    margin-bottom:30px ;
+  }
+  
+  .card1 {
+    height: 350px;
+    margin-left:20px;
+    width: 450px;
+  
+    border: 1px solid black;
+    padding: 30px;
+  }
+  .card1:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition-delay: 0.3s;
+    
+  }
+  .carddesc {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  
+  .cardheading h1 {
+    font-size: 40px;
+  }
+  .servicescards {
+    /* margin-top: 140px; */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contactussection {
+    height: 80vh;
+    background-color: black;
+  }
+  
+  .contactusheading h1 {
+    color: white;
+    text-align: center;
+  
+    font-size: 80px;
+  }
+  .fullname input {
+    height: 40px;
+    width: 900px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .forminputs div {
+    margin-top: 30px;
+  }
+  
+  .lastname input {
+    height: 40px;
+    width: 900px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .emailaddress input {
+    height: 40px;
+    width: 900px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .reasonforcontact input {
+    height: 40px;
+    width: 900px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .forminputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+  }
+  .blacking {
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    margin-top: 30vh;
+  }
+  .submitbutton {
+    height: 40px;
+    width: 900px;
+    padding: 10px;
+  }
+  
+  .submitbutton input {
+    margin-left: -10px;
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+  }
